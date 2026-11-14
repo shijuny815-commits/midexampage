@@ -18,23 +18,25 @@
 }
 
 .header .page.chioce a {
-    color: #ffffff;         
-    text-decoration: none;   
+    display: block;              
+    background-color: #34495e;   
+    color: #ffffff;              
+    padding: 10px 20px;          
+    border-radius: 6px;          
+    text-decoration: none;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-.header .page.chioce a:hover {
-    color: #3498db;        
+    transition: all 0.3s ease;   
 }
 
-.header .page.chioce .in.picked a {
-    color: aqua;            
-    font-weight: bold;      
+.header .page.chioce a:hover {
+    background-color: #3498db;   
+    color: #ffffff;
 }
-.header .page.chioce .in.picked a:hover{
-    color: #3498db;           
-    font-weight: bold;      
+
+.header .page.chioce a.picked {
+    background-color: #1abc9c;   
+    color: #ffffff;
+    font-weight: bold;
 }
