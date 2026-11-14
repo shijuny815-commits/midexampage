@@ -19,14 +19,23 @@
         <button id="buinesss-tiketfly">
         <script>
             let money = 0;
+            let isAdded = false; 
             const display = document.getElementById("money-display");
             const button = document.getElementById("add-btn");
 
             button.addEventListener("click", function() {
-                money = money + 1;
+                if (!isAdded) {
+                    money = money + 1;
+                    isAdded = true;
+                    button.textContent = "Cancel (-1)";
+                    button.classList.add("active"); 
+                } else {
+                    money = money - 1;
+                    isAdded = false;
+                    button.textContent = "Add +1";
+                    button.classList.remove("active"); 
+                }
                 display.textContent = money;
-                button.disabled = true;
-                button.textContent = "Locked";
             });
         </script>
     </body>
