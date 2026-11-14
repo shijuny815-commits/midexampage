@@ -17,7 +17,7 @@
     margin: 0 auto;
 }
 
-.header .page.choice a {
+.header .page.chioce a {
     color: #ffffff;         
     text-decoration: none;   
     font-size: 16px;
@@ -26,11 +26,11 @@
     cursor: pointer;
     transition: color 0.3s ease;
 }
-.header .page.choice a:hover {
+.header .page.chioce a:hover {
     color: #3498db;        
 }
 
-.header .page.choice .in.picked a {
+.header .page.chioce .in.picked a {
     color: aqua;            
     font-weight: bold;      
 }
