@@ -15,6 +15,12 @@
             </div>
         <div>
         <div class="selection-container">
+            <!-- 1. 總金額移到上方正中間 -->
+            <div class="total-money">
+                Total Money: <span id="money-display">0</span>
+            </div>
+
+            <!-- 第一行：機票種類 -->
             <div class="row-group">
                 <h3>1. Select Flight Ticket Type</h3>
                 <button class="option-btn" data-price="5000">Economy (+$5000)</button>
@@ -22,14 +28,12 @@
                 <button class="option-btn" data-price="25000">First Class (+$25000)</button>
             </div>
 
+            <!-- 第二行：旅遊天數 -->
             <div class="row-group">
                 <h3>2. Select Travel Duration</h3>
                 <button class="option-btn" data-price="3000">1 Day (+$3000)</button>
                 <button class="option-btn" data-price="6000">2 Days (+$6000)</button>
                 <button class="option-btn" data-price="9000">3 Days (+$9000)</button>
-            </div>
-            <div class="total-money">
-                Total Money: <span id="money-display">0</span>
             </div>
         </div>
 
@@ -49,6 +53,7 @@
                         totalMoney -= price;
                         button.classList.remove("active");
                     }
+
                     display.textContent = totalMoney;
                 });
             });
