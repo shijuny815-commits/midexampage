@@ -16,12 +16,18 @@
         <div>
         <p>Money: <span id="money-display">0</span></p>
         <button id="add-btn">Add +1</button>
+        <button id="buinesss-tiketfly">
         <script>
             let money = 0;
             const display = document.getElementById("money-display");
             const button = document.getElementById("add-btn");
 
-            button.addEventListener("click", function() {money = money + 1;display.textContent = money;});
+            button.addEventListener("click", function() {
+                money = money + 1;
+                display.textContent = money;
+                button.disabled = true;
+                button.textContent = "Locked";
+            });
         </script>
     </body>
 </html>
