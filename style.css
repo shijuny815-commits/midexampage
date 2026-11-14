@@ -71,14 +71,14 @@
 }
 
 .hero-text h1 {
-    font-size: 200px;
-    margin-bottom: 15px;
+    font-size: 100px;
+    margin-bottom: 8px;
     letter-spacing: 2px;
-    text-shadow: 10px 10px 40px rgba(0, 0, 0, 0.6);
+    text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
 }
 
 .hero-text p {
-    font-size: 100px;
-    letter-spacing:50px;
-    text-shadow: 10px 10px 25px rgba(0, 0, 0, 0.6);
+    font-size: 30px;
+    letter-spacing:5px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
 }
