@@ -10,33 +10,35 @@
 }
 .header .page.chioce {
     display: flex;
-    justify-content: flex-end; 
-    align-items: center;
-    gap: 40px; 
+    justify-content: flex-end;
+    align-items: stretch;
+    gap: 0;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0;
 }
 
 .header .page.chioce a {
-    display: block;              
-    background-color: #34495e;   
-    color: #ffffff;              
-    padding: 10px 20px;          
-    border-radius: 6px;          
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 18px 25px;
+    border-radius: 0;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
-    transition: all 0.3s ease;   
+    transition: background-color 0.3s ease;
 }
 
 .header .page.chioce a:hover {
-    background-color: #3498db;   
+    background-color: #34495e;
     color: #ffffff;
 }
 
 .header .page.chioce a.picked {
-    background-color: #1abc9c;   
+    background-color: #1abc9c;
     color: #ffffff;
     font-weight: bold;
 }
