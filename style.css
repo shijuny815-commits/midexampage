@@ -17,21 +17,20 @@
     margin: 0 auto;
 }
 
-.header .page.chioce a {
-    margin: 0;
+.header .page.choice a {
+    color: #ffffff;         
+    text-decoration: none;   
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
     cursor: pointer;
     transition: color 0.3s ease;
 }
+.header .page.choice a:hover {
+    color: #3498db;        
+}
 
-.header .page.chioce a:hover {
-    color: #3498db; 
-}
-.header .page.chioce .in.picked{
-    color:aqua;
-}
-.header .page.chioce a::after {
-    color: #3498db; 
+.header .page.choice .in.picked a {
+    color: aqua;            
+    font-weight: bold;      
 }
