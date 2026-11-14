@@ -32,3 +32,6 @@
 .header .page.chioce .in.pick{
     color:aqua;
 }
+.header .page.chioce a::after {
+    color: #3498db; 
+}
