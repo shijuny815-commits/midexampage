@@ -82,16 +82,40 @@
     letter-spacing:5px;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
 }
-#add-btn {
-    background-color: #3498db; 
+/* 區塊容器 */
+.selection-container {
+    margin: 20px;
+    font-family: sans-serif;
+}
+
+.row-group {
+    margin-bottom: 20px;
+}
+
+.row-group h3 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.option-btn {
+    background-color: #3498db;
     color: white;
     padding: 10px 20px;
+    margin-right: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
 }
-#add-btn.active {
-    background-color: #e74c3c; 
+
+.option-btn.active {
+    background-color: #e74c3c;
+}
+
+.total-money {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 20px;
 }

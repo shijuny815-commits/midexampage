@@ -14,28 +14,43 @@
                     <a href="count.html" class="picked">count for fly</a>
             </div>
         <div>
-        <p>Money: <span id="money-display">0</span></p>
-        <button id="add-btn">Add +1</button>
-        <button id="buinesss-tiketfly">
-        <script>
-            let money = 0;
-            let isAdded = false; 
-            const display = document.getElementById("money-display");
-            const button = document.getElementById("add-btn");
+        <div class="selection-container">
+            <div class="row-group">
+                <h3>1. Select Flight Ticket Type</h3>
+                <button class="option-btn" data-price="5000">Economy (+$5000)</button>
+                <button class="option-btn" data-price="12000">Business (+$12000)</button>
+                <button class="option-btn" data-price="25000">First Class (+$25000)</button>
+            </div>
 
-            button.addEventListener("click", function() {
-                if (!isAdded) {
-                    money = money + 1;
-                    isAdded = true;
-                    button.textContent = "Cancel (-1)";
-                    button.classList.add("active"); 
-                } else {
-                    money = money - 1;
-                    isAdded = false;
-                    button.textContent = "Add +1";
-                    button.classList.remove("active"); 
-                }
-                display.textContent = money;
+            <div class="row-group">
+                <h3>2. Select Travel Duration</h3>
+                <button class="option-btn" data-price="3000">1 Day (+$3000)</button>
+                <button class="option-btn" data-price="6000">2 Days (+$6000)</button>
+                <button class="option-btn" data-price="9000">3 Days (+$9000)</button>
+            </div>
+            <div class="total-money">
+                Total Money: <span id="money-display">0</span>
+            </div>
+        </div>
+
+        <script>
+            let totalMoney = 0;
+            const display = document.getElementById("money-display");
+            const buttons = document.querySelectorAll(".option-btn");
+
+            buttons.forEach(function(button) {
+                button.addEventListener("click", function() {
+                    let price = parseInt(button.getAttribute("data-price"));
+
+                    if (!button.classList.contains("active")) {
+                        totalMoney += price;
+                        button.classList.add("active");
+                    } else {
+                        totalMoney -= price;
+                        button.classList.remove("active");
+                    }
+                    display.textContent = totalMoney;
+                });
             });
         </script>
     </body>
