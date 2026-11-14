@@ -17,7 +17,7 @@
     margin: 0 auto;
 }
 
-.header .page.chioce p {
+.header .page.chioce a {
     margin: 0;
     font-size: 16px;
     font-weight: 500;
@@ -26,6 +26,9 @@
     transition: color 0.3s ease;
 }
 
-.header .page.chioce p:hover {
+.header .page.chioce a:hover {
     color: #3498db; 
+}
+.header .page.chioce .in.pick{
+    color:aqua;
 }
