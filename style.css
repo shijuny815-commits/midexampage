@@ -142,3 +142,11 @@ body {
 .option-btn.active {
     background-color: #e74c3c;
 }
+.list-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
