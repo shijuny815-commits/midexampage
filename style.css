@@ -29,7 +29,7 @@
 .header .page.chioce a:hover {
     color: #3498db; 
 }
-.header .page.chioce .in.pick{
+.header .page.chioce .in.picked{
     color:aqua;
 }
 .header .page.chioce a::after {
