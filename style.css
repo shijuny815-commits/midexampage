@@ -33,11 +33,11 @@
 }
 
 .header .page.chioce a:hover {
-    background-color: #34495e;
+    background-color:#3b4a42;
     color: #ffffff;
 }
 
 .header .page.chioce a.picked {
-    background-color: #1abc9c;
+    background-color:#d35400;
     color: #ffffff;
 }
